@@ -47,3 +47,7 @@ for h = [0.1, 0.01, 0.001]
     res = [res; e_eulesp, e_eulimp, e_heun, e_cn];
 end
 disp(res);
+
+%% Extra - Sistema di problemi di Cauchy
+f = @(t,y) [-2*y(2)+2*t; y(1)+y(2)+1-t]; % vettore di funzioni anonime
+[T, Y] = ode45(f, [0,3], [2; 1]); % funzione, intervallo (comune), vettore valori iniziali
