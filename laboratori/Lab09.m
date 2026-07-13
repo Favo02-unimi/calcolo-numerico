@@ -1,0 +1,34 @@
+% Lab 9 - Esercizio di riepilogo
+
+%% 1 - Integrale, Integrale con trapezi
+n = 7;
+a = n+2;
+f = @(x)((a .* x.^5 - 1)./(x.^5 + 1));
+x = linspace(0, 1, 10);
+y = f(x);
+
+I = integral(f, 0, 1);
+It = trapz(x, y);
+s1 = griddedInterpolant(x, y);
+s1z = s1((1/a)^(1/5));
+
+%% 2a - Integrali compositi (trapezi, punto medio, cavalieri-simpson)
+f = @(x)(1 ./ (cos(x)));
+a = 0;
+b = pi/4;
+I = integral(f, a, b);
+restrapz = [];
+resmedio = [];
+rescavsim = [];
+for m = [10, 100, 1000, 10000]
+    H = (b-a)/m;
+    It = trapz(linspace(a, b, m+1), f(linspace(a, b, m+1))); % m sottointervalli = m+1 punti
+    Im = pmedc(a, b, m, f);
+    Ics = simpsc(a, b, m, f);
+    restrapz = [restrapz; m, H, abs(I - It)];
+    resmedio = [resmedio; m, H, abs(I - Im)];
+    rescavsim = [rescavsim; m, H, abs(I - Ics)];
+end
+disp(restrapz);
+disp(resmedio);
+disp(rescavsim);
