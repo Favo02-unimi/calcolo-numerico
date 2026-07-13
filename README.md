@@ -21,7 +21,7 @@ Indice [laboratori](./laboratori/):
 - _Lab06 (saltato, informazioni generali su polinomi e plotting): solo da notebook [./notebooks-zaghe/Lab06z](./notebooks-zaghe/Lab06z.m)_
 - [Lab07](./laboratori/Lab07.m): Funzione anonima, Polinomio interpolatore, Valutazione polinomio, Derivata polinomio, Zeri polinomio, Spline lineare, Punti di Chebyshev, Punti equispaziati per spline lineare
 - [Lab08](./laboratori/Lab08.m): Retta di regressione, Scarto quadratico, Funzione parabola, Funzioni particolari
-- [Lab09](./laboratori/Lab09.m): Integrale, Integrale con trapezi, Integrali compositi (trapezi, punto medio, Cavalieri-Simpson)
+- [Lab09](./laboratori/Lab09.m): Integrale, Integrale con trapezi, Integrali compositi (trapezi, punto medio, Cavalieri-Simpson), Verifica errore metodi compositi
 - [Lab10](./laboratori/Lab10.m): Zero di funzione, Bisezione, Newton, Derivata simbolica, Problema di Cauchy con ode45, Errore relativo
 - [Lab11](./laboratori/Lab11.m): Problema di Cauchy con Eulero implicito, esplicito, Heun, Crank-Nicolson, Sistema di problemi di Cauchy
 

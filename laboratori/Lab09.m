@@ -29,6 +29,11 @@ for m = [10, 100, 1000, 10000]
     resmedio = [resmedio; m, H, abs(I - Im)];
     rescavsim = [rescavsim; m, H, abs(I - Ics)];
 end
-disp(restrapz);
-disp(resmedio);
-disp(rescavsim);
+% verifica tabellare errore
+disp(restrapz); % l'errore descresce del fattore di crescita^2, (10^2 = 100 ogni iter)
+disp(resmedio); % l'errore descresce del fattore di crescita^2, (10^2 = 100 ogni iter)
+disp(rescavsim); % l'errore descresce del fattore di crescita^4, (10^4 = 10000 ogni iter)
+
+% verifica grafica errore, cavsim più pendente
+loglog(restrapz(:, 1), restrapz(:, 3), resmedio(:, 1), resmedio(:, 3), rescavsim(:, 1), rescavsim(:, 3));
+legend("trapz", "medio", "cavsim");
