@@ -9,7 +9,7 @@ Materiale per il corso di [Calcolo Numerico](https://www.unimi.it/it/corsi/inseg
 - [laboratori](./laboratori/): Esercizi di riepilogo dei vari laboratori
 - [lib](./lib/): Funzioni custom usate come di libreria
 - [notebooks-zaghe](./notebooks-zaghe/): Esercizi dei laboratori (by [@Tsagae](https://github.com/Tsagae))
-- cheatsheet-teoria.pdf: Cheatsheet di teoria (molto disordinata)
+- [cheatsheet-teoria.pdf](./cheatsheet-teoria.pdf): Cheatsheet di teoria (molto disordinato)
 
 > [!NOTE]
 > Per dispense ben fatte, si rimanda a [MattiaOldani/Calcolo-numerico](https://github.com/MattiaOldani/Calcolo-numerico).
@@ -24,8 +24,3 @@ Indice [laboratori](./laboratori/):
 - [Lab09](./laboratori/Lab09.m): Integrale, Integrale con trapezi, Integrali compositi (trapezi, punto medio, Cavalieri-Simpson), Verifica errore metodi compositi
 - [Lab10](./laboratori/Lab10.m): Zero di funzione, Bisezione, Newton, Derivata simbolica, Problema di Cauchy con ode45, Errore relativo
 - [Lab11](./laboratori/Lab11.m): Problema di Cauchy con Eulero implicito, esplicito, Heun, Crank-Nicolson, Sistema di problemi di Cauchy
-
-TODO:
-
-- aggiungere mio cheatsheet teoria
-- verificare errore O(H^2) per trapezi e punto medio e O(H^4) per cavalieri-simpson in matlab
